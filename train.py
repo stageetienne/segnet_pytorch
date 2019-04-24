@@ -53,7 +53,7 @@ if args.cuda:
 # Create SegNet model
 label_nbr = 45
 model = SegNet(input_nbr,label_nbr)
-model.load_weights("vgg16-00b39a1b.pth") # load segnet weights
+model.load_from_segnet("vgg16-00b39a1b.pth") # load segnet weights
 if USE_CUDA:# convert to cuda if needed
     model.cuda()
 else:

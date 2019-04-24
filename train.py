@@ -19,7 +19,8 @@ import torch.nn as nn
 import torch.optim as optim
 #########
 
-import segnet
+#import segnet
+from segnet import *
 
 input_nbr = 3
 imsize = 224
